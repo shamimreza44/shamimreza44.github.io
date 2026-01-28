@@ -3,3 +3,35 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
+
+/* Skill category hover animation */
+.skill-category {
+  position: relative;
+}
+
+.skill-category .skill-header {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skill-category:hover .skill-header {
+  background-color: var(--accent-color, #FF7444);
+  color: white;
+  transform: scale(1.02);
+}
+
+.skill-category .skill-list {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.skill-category:hover .skill-list {
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: max-height 0.5s ease-in, opacity 0.4s ease-in, padding 0.3s ease-in;
+}
