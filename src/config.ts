@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Shamim Reza",
   title: "Student & PC Enthusiast",
-  description: "Portfolio website of Ryan Shamim Reza",
+  description: "Portfolio website of Shamim Reza",
   accentColor: "#FF7444",
   social: {
     email: "shamim44@student.sust.edu",
